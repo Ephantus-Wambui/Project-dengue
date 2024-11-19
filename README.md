@@ -31,14 +31,14 @@ cat ../dengueseq* > dengue_merged.fasta
 
 5. How many headers does the new file have?
 ```
-cat dengue_merged.fasta | grep ">"
+cat ../dengue_merged.fasta | grep ">"
 ```
 
-####>NC_001478.1 Digitaria streak virus, complete genome
-####>NC_001479.1 Encephalomyocarditis virus, complete genome
-####>NC_001480.1 Eggplant mosaic virus, complete genome
-####>NC_001481.2 Feline calicivirus, complete genome
-####>NC_001477.1 Dengue virus 1, complete genome
+#### >NC_001478.1 Digitaria streak virus, complete genome
+#### >NC_001479.1 Encephalomyocarditis virus, complete genome
+#### >NC_001480.1 Eggplant mosaic virus, complete genome
+#### >NC_001481.2 Feline calicivirus, complete genome
+#### >NC_001477.1 Dengue virus 1, complete genome
 
 6. How many sequences does the new file have?
 ### 5 sequences
@@ -50,6 +50,7 @@ grep ">" dengue_merged.fasta > dengue_headers.txt
 
 8. Extract only the names of the viruses, and create a new file called viruses.txt.
 ```
+grep "virus" ../dengue_headers.txt > viruses.txt
 ````
 
 9. Create a file for only the sequences. Name it dengue_seq.txt
