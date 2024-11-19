@@ -2,4 +2,4 @@
 
 dengue_fasta_files="../dengueseq*"
 
-awk '/^>/ {next} {print}' ../dengue_merged.fasta > ../dengue_seq.txt
+awk '/^>/ {next} {print}' $dengue_fasta_files > ../dengue_seq.txt
